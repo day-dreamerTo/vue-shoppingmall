@@ -1,4 +1,4 @@
-// https://eslint.org/docs/user-guide/configuring
+// http://eslint.org/docs/user-guide/configuring
 
 module.exports = {
   root: true,
@@ -9,8 +9,8 @@ module.exports = {
   env: {
     browser: true,
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
+  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
+  extends: 'eslint:recommended',
   // required to lint *.vue files
   plugins: [
     'html'
@@ -22,6 +22,18 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'semi': ['error', 'always'],
+    'space-before-function-paren': 0,
+    'quotes': 0,
+    'spaced-comment': 0,
+    'indent': 0,
+    'camelcase': 0,
+    'no-unused-vars': 0,
+    'one-var': 0,
+    'semi': 0,
+    'no-console': 0,
+    'no-undef': 0,
+    'no-unreachable': 0
   }
 }
