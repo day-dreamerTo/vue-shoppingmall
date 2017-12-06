@@ -26,6 +26,7 @@ const app = express()
 var router = express.Router();
 var goodsData = require('./../mock/goods.json');
 router.get('/goods', function(req, res, next) {
+  // 返回json格式的结果
   res.json(goodsData);
 });
 app.use(router);

@@ -8,17 +8,18 @@
             <select class="footer__region__select">
               <option value="en-US">USA</option>
               <option value="zh-CN">China</option>
+              <option value="in">India</option>
             </select>
           </div>
           <div class="footer__secondary__nav">
             <span>Copyright © 2017 IMooc All Rights Reserved.</span>
-            <a href="#">
+            <a href="http://us.lemall.com/us/aboutUs.html">
               About Us
             </a>
-            <a href="#">
+            <a href="http://us.lemall.com/us/termsofUse.html">
               Terms &amp; Conditions
             </a>
-            <a href="#">
+            <a href="http://us.lemall.com/us/privacyPolicy.html">
               Privacy Policy
             </a>
           </div>
@@ -27,3 +28,10 @@
     </div>
   </footer>
 </template>
+<script type="text/ecmascript-6">
+  export default{
+    data() {
+      return {}
+    }
+  };
+</script>
