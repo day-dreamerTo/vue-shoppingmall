@@ -15,6 +15,10 @@ Vue.config.productionTip = false
 Vue.use(VueLazyLoad,{
   loading: '../static/loading-svg/loading-cylon-red.svg'
 });
+
+import infiniteScroll from 'vue-infinite-scroll';
+Vue.use(infiniteScroll);
+
 // document.body.scrollTop = '100px'
 /* eslint-disable no-new */
 new Vue({

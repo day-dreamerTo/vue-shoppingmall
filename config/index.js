@@ -1,4 +1,3 @@
-
 'use strict'
 // Template version: 1.1.3
 // see http://vuejs-templates.github.io/webpack for documentation.
@@ -11,7 +10,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',// 可以修改静态资源的引入的地址前缀
+    assetsPublicPath: './',// 可以修改静态资源的引入的地址前缀
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -31,7 +30,19 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // 代理
+    proxyTable: {
+      '/goods': {
+        target: 'http://localhost:3000'
+      },
+      // 访问/goods/下的所以接口
+      '/goods/*': {
+        target: 'http://localhost:3000'
+      },
+      '/users/*': {
+        target: 'http://localhost:3000'
+      },
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
